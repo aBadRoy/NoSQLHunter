@@ -1,299 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" font-family="'Segoe UI', 'SF Pro Display', system-ui, sans-serif">
-  <defs>
-    <!-- Background gradient -->
-    <radialGradient id="bgGlow" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" style="stop-color:#0f172a"/>
-      <stop offset="100%" style="stop-color:#020617"/>
-    </radialGradient>
-    
-    <!-- Grid pattern -->
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5" opacity="0.4"/>
-    </pattern>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650" font-family="monospace">
+  <rect width="900" height="650" fill="#0d1117"/>
+  <rect x="20" y="15" width="860" height="36" rx="6" fill="#161b22"/>
+  <text x="450" y="40" text-anchor="middle" fill="#58a6ff" font-size="14" font-weight="bold">N O S Q L H U N T E R &amp;nbsp; A R C H I T E C T U R E</text>
 
-    <!-- Neon glow filters -->
-    <filter id="glowBlue" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="glowPink" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="glowAmber" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="shadowLg">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.6"/>
-    </filter>
-    <filter id="glowText" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+  <rect x="250" y="65" width="400" height="42" rx="21" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <text x="450" y="91" text-anchor="middle" fill="#58a6ff" font-size="13" font-weight="bold">CLI LAYER</text>
+  <text x="450" y="103" text-anchor="middle" fill="#8b949e" font-size="9">--url --proxy --dataset --depth --verbose --output</text>
 
-    <!-- Box gradients -->
-    <linearGradient id="boxCLI" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e293b"/><stop offset="100%" style="stop-color:#0f172a"/>
-    </linearGradient>
-    <linearGradient id="boxCore" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#312e81;stop-opacity:0.9"/><stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:0.95"/>
-    </linearGradient>
-    <linearGradient id="boxSpider" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1f2937"/><stop offset="100%" style="stop-color:#111827"/>
-    </linearGradient>
-    <linearGradient id="boxAttack" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2d1b2e"/><stop offset="100%" style="stop-color:#1a0d1b"/>
-    </linearGradient>
-    <linearGradient id="boxData" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f2b3d"/><stop offset="100%" style="stop-color:#091a26"/>
-    </linearGradient>
-    <linearGradient id="boxAnalyze" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0a2e1f"/><stop offset="100%" style="stop-color:#051a11"/>
-    </linearGradient>
-    <linearGradient id="boxOutput" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e293b"/><stop offset="100%" style="stop-color:#0f172a"/>
-    </linearGradient>
+  <line x1="450" y1="107" x2="450" y2="125" stroke="#30363d" stroke-width="2"/>
+  <polygon points="445,125 455,125 450,133" fill="#30363d"/>
 
-    <!-- Neon borders -->
-    <linearGradient id="borderCore" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#818cf8"/><stop offset="100%" style="stop-color:#6366f1"/>
-    </linearGradient>
-    <linearGradient id="borderTarget" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#ef4444"/><stop offset="50%" style="stop-color:#f97316"/><stop offset="100%" style="stop-color:#ef4444"/>
-    </linearGradient>
+  <rect x="150" y="135" width="600" height="60" rx="8" fill="#1c2128" stroke="#58a6ff" stroke-width="1"/>
+  <text x="450" y="160" text-anchor="middle" fill="#58a6ff" font-size="14" font-weight="bold">CORE ENGINE</text>
+  <text x="450" y="180" text-anchor="middle" fill="#8b949e" font-size="10">Session Management · Thread Pool · Response Analysis · Timeline · Reports</text>
 
-    <!-- Arrow markers -->
-    <marker id="arrowDown" viewBox="0 0 10 10" refX="5" refY="10" markerWidth="6" markerHeight="6" orient="auto">
-      <path d="M0,0 L5,10 L10,0 Z" fill="#6366f1"/>
-    </marker>
-    <marker id="arrowDownGreen" viewBox="0 0 10 10" refX="5" refY="10" markerWidth="6" markerHeight="6" orient="auto">
-      <path d="M0,0 L5,10 L10,0 Z" fill="#22c55e"/>
-    </marker>
-    <marker id="arrowDownRed" viewBox="0 0 10 10" refX="5" refY="10" markerWidth="6" markerHeight="6" orient="auto">
-      <path d="M0,0 L5,10 L10,0 Z" fill="#ef4444"/>
-    </marker>
-  </defs>
+  <line x1="150" y1="195" x2="150" y2="215" stroke="#30363d" stroke-width="2"/>
+  <line x1="450" y1="195" x2="450" y2="215" stroke="#30363d" stroke-width="2"/>
+  <line x1="750" y1="195" x2="750" y2="215" stroke="#30363d" stroke-width="2"/>
+  <polygon points="145,215 155,215 150,223" fill="#30363d"/>
+  <polygon points="445,215 455,215 450,223" fill="#30363d"/>
+  <polygon points="745,215 755,215 750,223" fill="#30363d"/>
 
-  <!-- Background -->
-  <rect width="1200" height="820" fill="url(#bgGlow)"/>
-  <rect width="1200" height="820" fill="url(#grid)"/>
+  <text x="150" y="213" text-anchor="middle" fill="#8b949e" font-size="9">DISCOVERY</text>
+  <text x="450" y="213" text-anchor="middle" fill="#8b949e" font-size="9">EXPLOITATION</text>
+  <text x="750" y="213" text-anchor="middle" fill="#8b949e" font-size="9">PAYLOADS</text>
 
-  <!-- Decorative scan line effect -->
-  <line x1="0" y1="410" x2="1200" y2="410" stroke="#6366f1" stroke-width="0.3" opacity="0.15"/>
+  <rect x="30" y="225" width="240" height="180" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect x="30" y="225" width="240" height="4" rx="2" fill="#f78166"/>
+  <text x="50" y="255" fill="#f78166" font-size="12" font-weight="bold">HELLHOUND SPIDER</text>
+  <line x1="40" y1="265" x2="260" y2="265" stroke="#21262d" stroke-width="1"/>
+  <text x="40" y="285" fill="#8b949e" font-size="10">robots.txt &amp; sitemap.xml extraction</text>
+  <text x="40" y="305" fill="#8b949e" font-size="10">JavaScript API route mining</text>
+  <text x="40" y="325" fill="#8b949e" font-size="10">HTML link &amp; form extraction</text>
+  <text x="40" y="345" fill="#8b949e" font-size="10">Parameter enumeration</text>
+  <text x="40" y="365" fill="#8b949e" font-size="10">Security tag classification</text>
+  <text x="40" y="385" fill="#8b949e" font-size="10">Endpoint discovery &amp; mapping</text>
+  <rect x="165" y="393" width="95" height="10" rx="5" fill="#21262d"/>
+  <text x="212" y="401" text-anchor="middle" fill="#d29922" font-size="8">endpoints + params</text>
 
-  <!-- Header -->
-  <rect x="300" y="15" width="600" height="42" rx="21" fill="#1e293b" stroke="#334155" stroke-width="1" filter="url(#shadowLg)"/>
-  <text x="600" y="42" text-anchor="middle" fill="#e2e8f0" font-size="18" font-weight="700" letter-spacing="2">N O S Q L H U N T E R &nbsp; A R C H I T E C T U R E</text>
+  <rect x="330" y="225" width="240" height="180" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect x="330" y="225" width="240" height="4" rx="2" fill="#bc8cff"/>
+  <text x="350" y="255" fill="#bc8cff" font-size="12" font-weight="bold">ATTACK MODULES</text>
+  <line x1="340" y1="265" x2="560" y2="265" stroke="#21262d" stroke-width="1"/>
+  <text x="345" y="285" fill="#8b949e" font-size="10">Auth Bypass ($ne, $regex, $gt)</text>
+  <text x="345" y="305" fill="#8b949e" font-size="10">Query Injection (blank query)</text>
+  <text x="345" y="325" fill="#8b949e" font-size="10">GET Parameter Injection</text>
+  <text x="345" y="345" fill="#8b949e" font-size="10">$where JS Tautology &amp; Code Exec</text>
+  <text x="345" y="365" fill="#8b949e" font-size="10">Blind Regex Extraction</text>
+  <text x="345" y="385" fill="#8b949e" font-size="10">Logical Ops ($or, $and, $nor)</text>
+  <rect x="470" y="393" width="90" height="10" rx="5" fill="#21262d"/>
+  <text x="515" y="401" text-anchor="middle" fill="#d29922" font-size="8">vulnerabilities</text>
 
-  <!-- ============ LAYER 1: CLI ============ -->
-  <rect x="350" y="75" width="500" height="48" rx="24" fill="url(#boxCLI)" stroke="#475569" stroke-width="1" filter="url(#shadowLg)"/>
-  <text x="600" y="105" text-anchor="middle" fill="#38bdf8" font-size="14" font-weight="700" filter="url(#glowText)">◈ CLI LAYER</text>
-  <text x="600" y="118" text-anchor="middle" fill="#94a3b8" font-size="9">argparse · —url · —proxy · —dataset · —depth · —concurrency · —verbose · —output</text>
+  <rect x="630" y="225" width="240" height="180" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect x="630" y="225" width="240" height="4" rx="2" fill="#79c0ff"/>
+  <text x="650" y="255" fill="#79c0ff" font-size="12" font-weight="bold">PAYLOAD DATASET</text>
+  <line x1="640" y1="265" x2="860" y2="265" stroke="#21262d" stroke-width="1"/>
+  <text x="645" y="285" fill="#8b949e" font-size="10">6,000+ payloads · 50+ categories</text>
+  <text x="645" y="305" fill="#8b949e" font-size="10">Sources: PayloadsAllTheThings</text>
+  <text x="645" y="325" fill="#8b949e" font-size="10">HackTricks · PortSwigger · OWASP</text>
+  <text x="645" y="345" fill="#8b949e" font-size="10">Supported: MongoDB, CouchDB</text>
+  <text x="645" y="365" fill="#8b949e" font-size="10">Redis, Elasticsearch, DynamoDB</text>
+  <text x="645" y="385" fill="#8b949e" font-size="10">Firebase, Cassandra + 9 more</text>
+  <rect x="765" y="393" width="95" height="10" rx="5" fill="#21262d"/>
+  <text x="812" y="401" text-anchor="middle" fill="#d29922" font-size="8">targeted payloads</text>
 
-  <!-- Arrow CLI → Core -->
-  <line x1="600" y1="123" x2="600" y2="148" stroke="#6366f1" stroke-width="2" marker-end="url(#arrowDown)" opacity="0.8"/>
+  <line x1="150" y1="405" x2="150" y2="435" stroke="#30363d" stroke-width="2"/>
+  <line x1="450" y1="405" x2="450" y2="435" stroke="#30363d" stroke-width="2"/>
+  <line x1="750" y1="405" x2="750" y2="435" stroke="#30363d" stroke-width="2"/>
+  <polygon points="145,435 155,435 150,443" fill="#30363d"/>
+  <polygon points="445,435 455,435 450,443" fill="#30363d"/>
+  <polygon points="745,435 755,435 750,443" fill="#30363d"/>
 
-  <!-- ============ LAYER 2: CORE ENGINE ============ -->
-  <rect x="250" y="150" width="700" height="70" rx="12" fill="url(#boxCore)" stroke="url(#borderCore)" stroke-width="1.5" filter="url(#shadowLg)"/>
-  <rect x="250" y="150" width="700" height="70" rx="12" fill="none" stroke="#818cf8" stroke-width="0.5" opacity="0.3"/>
-  <text x="600" y="177" text-anchor="middle" fill="#a5b4fc" font-size="15" font-weight="700" filter="url(#glowText)">⚙  CORE ENGINE — NoSQLInjector</text>
-  <text x="600" y="198" text-anchor="middle" fill="#c7d2fe" font-size="10">Session Management · Concurrent Thread Pool · Response Analysis Engine · Timeline Logger · JSON Report Builder</text>
+  <text x="150" y="433" text-anchor="middle" fill="#8b949e" font-size="9">endpoints</text>
+  <text x="450" y="433" text-anchor="middle" fill="#8b949e" font-size="9">findings</text>
+  <text x="750" y="433" text-anchor="middle" fill="#8b949e" font-size="9">payloads</text>
 
-  <!-- Arrows from Core to 4 Modules -->
-  <line x1="220" y1="220" x2="220" y2="260" stroke="#6366f1" stroke-width="2" marker-end="url(#arrowDown)" opacity="0.7"/>
-  <line x1="473" y1="220" x2="473" y2="260" stroke="#6366f1" stroke-width="2" marker-end="url(#arrowDown)" opacity="0.7"/>
-  <line x1="727" y1="220" x2="727" y2="260" stroke="#6366f1" stroke-width="2" marker-end="url(#arrowDown)" opacity="0.7"/>
-  <line x1="980" y1="220" x2="980" y2="260" stroke="#6366f1" stroke-width="2" marker-end="url(#arrowDown)" opacity="0.7"/>
+  <rect x="250" y="445" width="400" height="55" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect x="250" y="445" width="400" height="3" rx="1.5" fill="#d29922"/>
+  <text x="450" y="468" text-anchor="middle" fill="#d29922" font-size="13" font-weight="bold">RESPONSE ANALYZER &amp; REPORTING</text>
+  <text x="450" y="488" text-anchor="middle" fill="#8b949e" font-size="10">Scoring Engine · Baseline Comparison · Severity (Crit/High/Med) · JSON Report</text>
 
-  <!-- Module labels between arrows -->
-  <text x="220" y="242" text-anchor="middle" fill="#818cf8" font-size="9" font-weight="600">DISCOVERY</text>
-  <text x="473" y="242" text-anchor="middle" fill="#e879f9" font-size="9" font-weight="600">EXPLOITATION</text>
-  <text x="727" y="242" text-anchor="middle" fill="#60a5fa" font-size="9" font-weight="600">PAYLOADS</text>
-  <text x="980" y="242" text-anchor="middle" fill="#34d399" font-size="9" font-weight="600">ANALYSIS</text>
+  <line x1="450" y1="500" x2="450" y2="515" stroke="#f78166" stroke-width="2"/>
+  <polygon points="445,515 455,515 450,523" fill="#f78166"/>
 
-  <!-- ============ MODULE 1: SPIDER ============ -->
-  <rect x="60" y="262" width="320" height="200" rx="10" fill="url(#boxSpider)" stroke="#334155" stroke-width="1" filter="url(#shadowLg)"/>
-  <!-- Top accent bar -->
-  <rect x="60" y="262" width="320" height="4" rx="2" fill="#f472b6"/>
-  <!-- Header with icon -->
-  <circle cx="90" cy="290" r="14" fill="#f472b6" opacity="0.15"/>
-  <text x="90" y="295" text-anchor="middle" fill="#f472b6" font-size="14">🕷</text>
-  <text x="115" y="296" fill="#f9a8d4" font-size="13" font-weight="700">HELLHOUND SPIDER</text>
-  <line x1="75" y1="310" x2="365" y2="310" stroke="#1f2937" stroke-width="1"/>
-  <!-- Items -->
-  <circle cx="85" cy="330" r="3" fill="#f472b6" opacity="0.8"/>
-  <text x="95" y="334" fill="#94a3b8" font-size="10">robots.txt parsing &amp; extraction</text>
-  <circle cx="85" cy="350" r="3" fill="#f472b6" opacity="0.8"/>
-  <text x="95" y="354" fill="#94a3b8" font-size="10">sitemap.xml URL discovery</text>
-  <circle cx="85" cy="370" r="3" fill="#f472b6" opacity="0.8"/>
-  <text x="95" y="374" fill="#94a3b8" font-size="10">JavaScript file API route mining</text>
-  <circle cx="85" cy="390" r="3" fill="#f472b6" opacity="0.8"/>
-  <text x="95" y="394" fill="#94a3b8" font-size="10">HTML link &amp; form extraction (regex)</text>
-  <circle cx="85" cy="410" r="3" fill="#f472b6" opacity="0.8"/>
-  <text x="95" y="414" fill="#94a3b8" font-size="10">Security tag classification (ML heuristics)</text>
-  <circle cx="85" cy="430" r="3" fill="#f472b6" opacity="0.8"/>
-  <text x="95" y="434" fill="#94a3b8" font-size="10">Parameter enumeration &amp; input mapping</text>
-  <!-- Output badge -->
-  <rect x="230" y="440" width="135" height="18" rx="9" fill="#701a75" opacity="0.6"/>
-  <text x="297" y="453" text-anchor="middle" fill="#facc15" font-size="9" font-weight="600">→ endpoints + params + tags</text>
+  <rect x="180" y="525" width="540" height="55" rx="8" fill="none" stroke="#f78166" stroke-width="2" stroke-dasharray="8,4"/>
+  <rect x="180" y="525" width="540" height="55" rx="8" fill="#f78166" opacity="0.03"/>
+  <text x="450" y="550" text-anchor="middle" fill="#f78166" font-size="14" font-weight="bold">TARGET WEB APPLICATION</text>
+  <text x="450" y="570" text-anchor="middle" fill="#8b949e" font-size="11">POST /api/login · GET /api/search · POST /api/data · $where injection points</text>
 
-  <!-- ============ MODULE 2: ATTACK ============ -->
-  <rect x="313" y="262" width="320" height="200" rx="10" fill="url(#boxAttack)" stroke="#334155" stroke-width="1" filter="url(#shadowLg)"/>
-  <rect x="313" y="262" width="320" height="4" rx="2" fill="#e879f9"/>
-  <circle cx="343" cy="290" r="14" fill="#e879f9" opacity="0.15"/>
-  <text x="343" y="295" text-anchor="middle" fill="#e879f9" font-size="14">⚡</text>
-  <text x="368" y="296" fill="#d8b4fe" font-size="13" font-weight="700">ATTACK MODULES</text>
-  <line x1="328" y1="310" x2="618" y2="310" stroke="#2d1b2e" stroke-width="1"/>
-  
-  <rect x="323" y="318" width="140" height="22" rx="4" fill="#4a044e" opacity="0.5"/>
-  <text x="335" y="333" fill="#e9d5ff" font-size="10">Auth Bypass ($ne, $regex, $gt)</text>
-  <rect x="323" y="344" width="140" height="22" rx="4" fill="#4a044e" opacity="0.5"/>
-  <text x="335" y="359" fill="#e9d5ff" font-size="10">Query Injection (blank query)</text>
-  <rect x="323" y="370" width="140" height="22" rx="4" fill="#4a044e" opacity="0.5"/>
-  <text x="335" y="385" fill="#e9d5ff" font-size="10">GET Parameter Injection</text>
-  <rect x="323" y="396" width="140" height="22" rx="4" fill="#4a044e" opacity="0.5"/>
-  <text x="335" y="411" fill="#e9d5ff" font-size="10">$where JS Tautology</text>
-  
-  <rect x="478" y="318" width="140" height="22" rx="4" fill="#4a044e" opacity="0.5"/>
-  <text x="490" y="333" fill="#e9d5ff" font-size="10">$where Code Execution</text>
-  <rect x="478" y="344" width="140" height="22" rx="4" fill="#4a044e" opacity="0.5"/>
-  <text x="490" y="359" fill="#e9d5ff" font-size="10">$where Error Exfiltration</text>
-  <rect x="478" y="370" width="140" height="22" rx="4" fill="#4a044e" opacity="0.5"/>
-  <text x="490" y="385" fill="#e9d5ff" font-size="10">Blind Regex Extraction</text>
-  <rect x="478" y="396" width="140" height="22" rx="4" fill="#4a044e" opacity="0.5"/>
-  <text x="490" y="411" fill="#e9d5ff" font-size="10">Logical Ops ($or, $and, $nor)</text>
-
-  <!-- ============ MODULE 3: DATASET ============ -->
-  <rect x="567" y="262" width="320" height="200" rx="10" fill="url(#boxData)" stroke="#334155" stroke-width="1" filter="url(#shadowLg)"/>
-  <rect x="567" y="262" width="320" height="4" rx="2" fill="#60a5fa"/>
-  <circle cx="597" cy="290" r="14" fill="#60a5fa" opacity="0.15"/>
-  <text x="597" y="295" text-anchor="middle" fill="#60a5fa" font-size="14">📦</text>
-  <text x="622" y="296" fill="#93c5fd" font-size="13" font-weight="700">PAYLOAD DATASET</text>
-  <line x1="582" y1="310" x2="872" y2="310" stroke="#0f2b3d" stroke-width="1"/>
-
-  <text x="585" y="330" fill="#93c5fd" font-size="10" font-weight="600">6,000+ payloads · 50+ attack categories</text>
-  <text x="585" y="350" fill="#64748b" font-size="9">Supported Databases:</text>
-  
-  <!-- Database tags -->
-  <rect x="585" y="358" width="82" height="18" rx="4" fill="#1e3a5f" opacity="0.6"/>
-  <text x="592" y="370" fill="#93c5fd" font-size="8">MongoDB</text>
-  <rect x="672" y="358" width="78" height="18" rx="4" fill="#1e3a5f" opacity="0.6"/>
-  <text x="679" y="370" fill="#93c5fd" font-size="8">CouchDB</text>
-  <rect x="755" y="358" width="64" height="18" rx="4" fill="#1e3a5f" opacity="0.6"/>
-  <text x="762" y="370" fill="#93c5fd" font-size="8">Redis</text>
-
-  <rect x="585" y="380" width="96" height="18" rx="4" fill="#1e3a5f" opacity="0.6"/>
-  <text x="592" y="392" fill="#93c5fd" font-size="8">Elasticsearch</text>
-  <rect x="686" y="380" width="90" height="18" rx="4" fill="#1e3a5f" opacity="0.6"/>
-  <text x="693" y="392" fill="#93c5fd" font-size="8">DynamoDB</text>
-  <rect x="781" y="380" width="88" height="18" rx="4" fill="#1e3a5f" opacity="0.6"/>
-  <text x="788" y="392" fill="#93c5fd" font-size="8">Cassandra</text>
-
-  <rect x="585" y="402" width="80" height="18" rx="4" fill="#1e3a5f" opacity="0.6"/>
-  <text x="592" y="414" fill="#93c5fd" font-size="8">Firebase</text>
-  <rect x="670" y="402" width="64" height="18" rx="4" fill="#1e3a5f" opacity="0.6"/>
-  <text x="677" y="414" fill="#93c5fd" font-size="8">HBase</text>
-  <rect x="739" y="402" width="66" height="18" rx="4" fill="#1e3a5f" opacity="0.6"/>
-  <text x="746" y="414" fill="#93c5fd" font-size="8">Neo4j</text>
-
-  <rect x="810" y="402" width="68" height="18" rx="4" fill="#1e3a5f" opacity="0.6"/>
-  <text x="817" y="414" fill="#93c5fd" font-size="8">+7 more</text>
-
-  <!-- Sources -->
-  <text x="585" y="445" fill="#64748b" font-size="8">Sources: PayloadsAllTheThings · HackTricks · PortSwigger · OWASP · CTFs</text>
-
-  <!-- ============ MODULE 4: ANALYZER ============ -->
-  <rect x="820" y="262" width="320" height="200" rx="10" fill="url(#boxAnalyze)" stroke="#334155" stroke-width="1" filter="url(#shadowLg)"/>
-  <rect x="820" y="262" width="320" height="4" rx="2" fill="#34d399"/>
-  <circle cx="850" cy="290" r="14" fill="#34d399" opacity="0.15"/>
-  <text x="850" y="295" text-anchor="middle" fill="#34d399" font-size="14">📊</text>
-  <text x="875" y="296" fill="#6ee7b7" font-size="13" font-weight="700">RESPONSE ANALYZER</text>
-  <line x1="835" y1="310" x2="1125" y2="310" stroke="#0a2e1f" stroke-width="1"/>
-
-  <!-- Scoring gauge visual -->
-  <rect x="840" y="320" width="280" height="16" rx="8" fill="#064e3b" opacity="0.5"/>
-  <rect x="840" y="320" width="196" height="16" rx="8" fill="#22c55e" opacity="0.8"/>
-  <text x="980" y="332" text-anchor="middle" fill="#facc15" font-size="8" font-weight="700">VULNERABILITY SCORE: 7/10</text>
-
-  <circle cx="850" cy="360" r="3" fill="#34d399"/>
-  <text x="860" y="364" fill="#a7f3d0" font-size="10">Response scoring engine (0-10)</text>
-  <circle cx="850" cy="380" r="3" fill="#34d399"/>
-  <text x="860" y="384" fill="#a7f3d0" font-size="10">Baseline comparison algorithm</text>
-  <circle cx="850" cy="400" r="3" fill="#34d399"/>
-  <text x="860" y="404" fill="#a7f3d0" font-size="10">Sensitive data regex patterns</text>
-  <circle cx="850" cy="420" r="3" fill="#34d399"/>
-  <text x="860" y="424" fill="#a7f3d0" font-size="10">Response size anomaly detection</text>
-  <circle cx="850" cy="440" r="3" fill="#34d399"/>
-  <text x="860" y="444" fill="#a7f3d0" font-size="10">Auth success &amp; bulk data identification</text>
-
-  <rect x="1025" y="440" width="100" height="18" rx="9" fill="#065f46" opacity="0.8"/>
-  <text x="1075" y="453" text-anchor="middle" fill="#facc15" font-size="9" font-weight="600">Score ≥ 3 = VULN</text>
-
-  <!-- ============ MODULES → OUTPUT arrows ============ -->
-  <line x1="220" y1="462" x2="220" y2="510" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowDownGreen)" opacity="0.6"/>
-  <line x1="473" y1="462" x2="473" y2="510" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowDownGreen)" opacity="0.6"/>
-  <line x1="727" y1="462" x2="727" y2="510" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowDownGreen)" opacity="0.6"/>
-  <line x1="980" y1="462" x2="980" y2="510" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowDownGreen)" opacity="0.6"/>
-
-  <text x="220" y="478" text-anchor="middle" fill="#22c55e" font-size="8">endpoints</text>
-  <text x="473" y="478" text-anchor="middle" fill="#22c55e" font-size="8">findings</text>
-  <text x="727" y="478" text-anchor="middle" fill="#22c55e" font-size="8">payloads</text>
-  <text x="980" y="478" text-anchor="middle" fill="#22c55e" font-size="8">scores</text>
-
-  <!-- ============ OUTPUT LAYER ============ -->
-  <rect x="250" y="512" width="700" height="65" rx="12" fill="url(#boxOutput)" stroke="#475569" stroke-width="1" filter="url(#shadowLg)"/>
-  <rect x="250" y="512" width="700" height="3" rx="1.5" fill="#fbbf24"/>
-  <text x="600" y="536" text-anchor="middle" fill="#fbbf24" font-size="14" font-weight="700" filter="url(#glowAmber)">◈ OUTPUT &amp; REPORTING</text>
-  <text x="600" y="555" text-anchor="middle" fill="#94a3b8" font-size="10">JSON Report · Color-Coded Console · Timeline · Severity Classification (Critical/High/Medium) · CVE-Style Remediation</text>
-  <text x="600" y="570" text-anchor="middle" fill="#64748b" font-size="9">Confidence Scoring · Raw Request/Response Capture · UUID Tracing · Chronological Event Log</text>
-
-  <!-- Arrow Output → Target -->
-  <line x1="600" y1="577" x2="600" y2="612" stroke="#ef4444" stroke-width="2.5" marker-end="url(#arrowDownRed)" opacity="0.8"/>
-
-  <!-- ============ TARGET ============ -->
-  <rect x="180" y="615" width="840" height="65" rx="12" fill="none" stroke="url(#borderTarget)" stroke-width="2" stroke-dasharray="8,4" filter="url(#shadowLg)"/>
-  <rect x="180" y="615" width="840" height="65" rx="12" fill="#ef4444" opacity="0.03"/>
-  
-  <!-- Target inner glow -->
-  <rect x="180" y="615" width="840" height="65" rx="12" fill="none" stroke="#ef4444" stroke-width="0.5" opacity="0.3"/>
-  
-  <text x="600" y="642" text-anchor="middle" fill="#fca5a5" font-size="16" font-weight="700">🎯 TARGET WEB APPLICATION</text>
-  <text x="600" y="662" text-anchor="middle" fill="#f87171" font-size="10">MongoDB · CouchDB · Redis · Elasticsearch · DynamoDB · Firebase · Cassandra + 9 more</text>
-  <text x="600" y="676" text-anchor="middle" fill="#ef4444" font-size="9" opacity="0.7">POST /api/login · GET /api/search · POST /api/data · $where injection points</text>
-
-  <!-- ============ LEGEND / FLOW ============ -->
-  <rect x="60" y="700" width="1080" height="105" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" filter="url(#shadowLg)"/>
-  <text x="80" y="723" fill="#94a3b8" font-size="11" font-weight="700">EXECUTION PIPELINE</text>
-
-  <!-- Flow steps -->
-  <rect x="80" y="735" width="36" height="24" rx="6" fill="#312e81"/>
-  <text x="98" y="752" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">1</text>
-  <text x="125" y="752" fill="#94a3b8" font-size="10">CLI parses args → Core Engine initializes session, thread pool, loads 6K+ payloads</text>
-
-  <rect x="610" y="735" width="36" height="24" rx="6" fill="#701a75"/>
-  <text x="628" y="752" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">2</text>
-  <text x="655" y="752" fill="#94a3b8" font-size="10">Hellhound Spider discovers endpoints → Attack Modules test each with targeted payloads</text>
-
-  <rect x="80" y="770" width="36" height="24" rx="6" fill="#1e40af"/>
-  <text x="98" y="787" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">3</text>
-  <text x="125" y="787" fill="#94a3b8" font-size="10">Analyzer scores responses → Vulnerabilities logged with severity, confidence, and CVE-style remediation</text>
-
-  <rect x="610" y="770" width="36" height="24" rx="6" fill="#065f46"/>
-  <text x="628" y="787" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">4</text>
-  <text x="655" y="787" fill="#94a3b8" font-size="10">Data extraction on vulnerable endpoints → JSON report with timeline, findings, and summary</text>
-
-  <!-- Decorative corner accents -->
-  <path d="M0,0 L30,0" stroke="#6366f1" stroke-width="2" opacity="0.3"/>
-  <path d="M0,0 L0,30" stroke="#6366f1" stroke-width="2" opacity="0.3"/>
-  <path d="M1200,0 L1170,0" stroke="#6366f1" stroke-width="2" opacity="0.3"/>
-  <path d="M1200,0 L1200,30" stroke="#6366f1" stroke-width="2" opacity="0.3"/>
-  <path d="M0,820 L30,820" stroke="#6366f1" stroke-width="2" opacity="0.3"/>
-  <path d="M0,820 L0,790" stroke="#6366f1" stroke-width="2" opacity="0.3"/>
-  <path d="M1200,820 L1170,820" stroke="#6366f1" stroke-width="2" opacity="0.3"/>
-  <path d="M1200,820 L1200,790" stroke="#6366f1" stroke-width="2" opacity="0.3"/>
+  <rect x="30" y="600" width="840" height="40" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="618" fill="#8b949e" font-size="11" font-weight="bold">PIPELINE:</text>
+  <rect x="120" y="607" width="24" height="16" rx="4" fill="#1c2128"/>
+  <text x="132" y="619" text-anchor="middle" fill="#58a6ff" font-size="10" font-weight="bold">1</text>
+  <text x="150" y="619" fill="#8b949e" font-size="10">CLI → Core Engine</text>
+  <rect x="280" y="607" width="24" height="16" rx="4" fill="#1c2128"/>
+  <text x="292" y="619" text-anchor="middle" fill="#bc8cff" font-size="10" font-weight="bold">2</text>
+  <text x="310" y="619" fill="#8b949e" font-size="10">Spider → Attack with payloads</text>
+  <rect x="480" y="607" width="24" height="16" rx="4" fill="#1c2128"/>
+  <text x="492" y="619" text-anchor="middle" fill="#d29922" font-size="10" font-weight="bold">3</text>
+  <text x="510" y="619" fill="#8b949e" font-size="10">Analyze → Score → Report</text>
 </svg>
