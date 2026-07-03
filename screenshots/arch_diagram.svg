@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#0d1117"/>
+  <text x="450" y="35" text-anchor="middle" fill="#58a6ff" font-size="16" font-weight="bold" font-family="sans-serif">N O S Q L H U N T E R  A R C H I T E C T U R E</text>
+
+  <rect x="250" y="55" width="400" height="40" rx="20" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <text x="450" y="80" text-anchor="middle" fill="#58a6ff" font-size="13" font-weight="bold" font-family="sans-serif">CLI LAYER</text>
+
+  <line x1="450" y1="95" x2="450" y2="115" stroke="#30363d" stroke-width="2"/>
+  <polygon points="445,115 455,115 450,122" fill="#30363d"/>
+
+  <rect x="150" y="125" width="600" height="50" rx="6" fill="#1c2128" stroke="#58a6ff" stroke-width="1"/>
+  <text x="450" y="148" text-anchor="middle" fill="#58a6ff" font-size="14" font-weight="bold" font-family="sans-serif">CORE ENGINE</text>
+  <text x="450" y="165" text-anchor="middle" fill="#8b949e" font-size="10" font-family="sans-serif">Session Management - Thread Pool - Response Analysis - Reports</text>
+
+  <line x1="150" y1="175" x2="150" y2="195" stroke="#30363d" stroke-width="2"/>
+  <line x1="450" y1="175" x2="450" y2="195" stroke="#30363d" stroke-width="2"/>
+  <line x1="750" y1="175" x2="750" y2="195" stroke="#30363d" stroke-width="2"/>
+  <polygon points="145,195 155,195 150,202" fill="#30363d"/>
+  <polygon points="445,195 455,195 450,202" fill="#30363d"/>
+  <polygon points="745,195 755,195 750,202" fill="#30363d"/>
+
+  <text x="150" y="193" text-anchor="middle" fill="#8b949e" font-size="9" font-family="sans-serif">DISCOVERY</text>
+  <text x="450" y="193" text-anchor="middle" fill="#8b949e" font-size="9" font-family="sans-serif">EXPLOITATION</text>
+  <text x="750" y="193" text-anchor="middle" fill="#8b949e" font-size="9" font-family="sans-serif">DATASET</text>
+
+  <rect x="25" y="205" width="280" height="175" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect x="25" y="205" width="280" height="3" rx="1.5" fill="#f78166"/>
+  <text x="40" y="232" fill="#f78166" font-size="12" font-weight="bold" font-family="sans-serif">HELLHOUND SPIDER</text>
+  <line x1="35" y1="242" x2="295" y2="242" stroke="#21262d" stroke-width="1"/>
+  <text x="40" y="260" fill="#8b949e" font-size="10" font-family="sans-serif">robots.txt and sitemap.xml extraction</text>
+  <text x="40" y="278" fill="#8b949e" font-size="10" font-family="sans-serif">JavaScript API route mining</text>
+  <text x="40" y="296" fill="#8b949e" font-size="10" font-family="sans-serif">HTML link and form extraction</text>
+  <text x="40" y="314" fill="#8b949e" font-size="10" font-family="sans-serif">Parameter enumeration and input mapping</text>
+  <text x="40" y="332" fill="#8b949e" font-size="10" font-family="sans-serif">Security tag classification</text>
+  <text x="40" y="350" fill="#8b949e" font-size="10" font-family="sans-serif">Endpoint discovery and crawling</text>
+  <text x="40" y="370" fill="#8b949e" font-size="10" font-family="sans-serif">Recursive URL extraction</text>
+
+  <rect x="310" y="205" width="280" height="175" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect x="310" y="205" width="280" height="3" rx="1.5" fill="#bc8cff"/>
+  <text x="325" y="232" fill="#bc8cff" font-size="12" font-weight="bold" font-family="sans-serif">ATTACK MODULES</text>
+  <line x1="320" y1="242" x2="580" y2="242" stroke="#21262d" stroke-width="1"/>
+  <text x="325" y="260" fill="#8b949e" font-size="10" font-family="sans-serif">Auth Bypass - ne, regex, gt</text>
+  <text x="325" y="278" fill="#8b949e" font-size="10" font-family="sans-serif">Query Injection - blank query</text>
+  <text x="325" y="296" fill="#8b949e" font-size="10" font-family="sans-serif">GET Parameter Injection</text>
+  <text x="325" y="314" fill="#8b949e" font-size="10" font-family="sans-serif">dollar-where JS Tautology</text>
+  <text x="325" y="332" fill="#8b949e" font-size="10" font-family="sans-serif">dollar-where Code Execution</text>
+  <text x="325" y="350" fill="#8b949e" font-size="10" font-family="sans-serif">Blind Regex Extraction</text>
+  <text x="325" y="370" fill="#8b949e" font-size="10" font-family="sans-serif">Logical Ops - or, and, nor</text>
+
+  <rect x="595" y="205" width="280" height="175" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect x="595" y="205" width="280" height="3" rx="1.5" fill="#79c0ff"/>
+  <text x="610" y="232" fill="#79c0ff" font-size="12" font-weight="bold" font-family="sans-serif">PAYLOAD DATASET</text>
+  <line x1="605" y1="242" x2="865" y2="242" stroke="#21262d" stroke-width="1"/>
+  <text x="610" y="260" fill="#8b949e" font-size="10" font-family="sans-serif">6000+ payloads across 50+ categories</text>
+  <text x="610" y="278" fill="#8b949e" font-size="10" font-family="sans-serif">MongoDB - CouchDB - Redis</text>
+  <text x="610" y="296" fill="#8b949e" font-size="10" font-family="sans-serif">Elasticsearch - DynamoDB</text>
+  <text x="610" y="314" fill="#8b949e" font-size="10" font-family="sans-serif">Firebase - Cassandra - HBase</text>
+  <text x="610" y="332" fill="#8b949e" font-size="10" font-family="sans-serif">Neo4j - Couchbase - ArangoDB</text>
+  <text x="610" y="350" fill="#8b949e" font-size="10" font-family="sans-serif">Sources: PayloadsAllTheThings</text>
+  <text x="610" y="370" fill="#8b949e" font-size="10" font-family="sans-serif">HackTricks - PortSwigger - OWASP</text>
+
+  <line x1="165" y1="380" x2="165" y2="410" stroke="#30363d" stroke-width="2"/>
+  <line x1="450" y1="380" x2="450" y2="410" stroke="#30363d" stroke-width="2"/>
+  <line x1="735" y1="380" x2="735" y2="410" stroke="#30363d" stroke-width="2"/>
+  <polygon points="160,410 170,410 165,417" fill="#30363d"/>
+  <polygon points="445,410 455,410 450,417" fill="#30363d"/>
+  <polygon points="730,410 740,410 735,417" fill="#30363d"/>
+
+  <text x="165" y="408" text-anchor="middle" fill="#8b949e" font-size="9" font-family="sans-serif">endpoints</text>
+  <text x="450" y="408" text-anchor="middle" fill="#8b949e" font-size="9" font-family="sans-serif">findings</text>
+  <text x="735" y="408" text-anchor="middle" fill="#8b949e" font-size="9" font-family="sans-serif">payloads</text>
+
+  <rect x="250" y="420" width="400" height="50" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect x="250" y="420" width="400" height="3" rx="1.5" fill="#d29922"/>
+  <text x="450" y="442" text-anchor="middle" fill="#d29922" font-size="13" font-weight="bold" font-family="sans-serif">RESPONSE ANALYZER and REPORTING</text>
+  <text x="450" y="460" text-anchor="middle" fill="#8b949e" font-size="10" font-family="sans-serif">Scoring Engine - Baseline Comparison - Severity - JSON Report</text>
+
+  <line x1="450" y1="470" x2="450" y2="488" stroke="#f78166" stroke-width="2"/>
+  <polygon points="445,488 455,488 450,495" fill="#f78166"/>
+
+  <rect x="180" y="498" width="540" height="50" rx="6" fill="none" stroke="#f78166" stroke-width="2" stroke-dasharray="8,4"/>
+  <rect x="180" y="498" width="540" height="50" rx="6" fill="#f78166" opacity="0.03"/>
+  <text x="450" y="522" text-anchor="middle" fill="#f78166" font-size="15" font-weight="bold" font-family="sans-serif">TARGET WEB APPLICATION</text>
+  <text x="450" y="540" text-anchor="middle" fill="#8b949e" font-size="11" font-family="sans-serif">/api/login - /api/search - /api/data - dollar-where injection points</text>
+
+  <rect x="25" y="565" width="850" height="25" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="40" y="581" fill="#8b949e" font-size="11" font-weight="bold" font-family="sans-serif">PIPELINE:</text>
+  <text x="105" y="581" fill="#58a6ff" font-size="10" font-family="sans-serif">1. CLI to Core Engine</text>
+  <text x="255" y="581" fill="#bc8cff" font-size="10" font-family="sans-serif">2. Spider discovers endpoints</text>
+  <text x="435" y="581" fill="#d29922" font-size="10" font-family="sans-serif">3. Attack Modules test with payloads</text>
+  <text x="655" y="581" fill="#3fb950" font-size="10" font-family="sans-serif">4. Analyze and Score - Report</text>
+</svg>
