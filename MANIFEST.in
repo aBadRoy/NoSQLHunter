@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+include requirements.txt
+include dataset/dataset_nosql.json
+recursive-include nosqlhunter *.py
