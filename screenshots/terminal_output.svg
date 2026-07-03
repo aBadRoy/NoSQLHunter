@@ -150,9 +150,7 @@
   <text x="68" y="586" fill="#a6adc8" font-size="11">Response: 47 records returned (baseline was 0) — data leak confirmed</text>
 
   <!-- Blinking cursor -->
-  <rect x="50" y="650" width="10" height="16" rx="1" fill="#cdd6f4" opacity="0.8">
-    <animate attributeName="opacity" values="0.8;0;0.8" dur="1s" repeatCount="indefinite"/>
-  </rect>
+  <rect x="50" y="650" width="10" height="16" rx="1" fill="#cdd6f4" opacity="0.8"/>
   <text x="65" y="665" fill="#585b70" font-size="12">Scanning in progress — 3/14 endpoints tested · 2 vulnerabilities found · Press Ctrl+C to stop</text>
 
   <!-- Status bar at bottom -->
