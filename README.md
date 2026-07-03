@@ -55,6 +55,22 @@
 
 ---
 
+## Architecture
+
+<p align="center">
+  <img src="screenshots/architecture.svg" alt="NoSQLHunter Architecture" width="900"/>
+</p>
+
+The framework follows a modular pipeline architecture:
+1. **CLI Layer** parses user arguments and initializes the core engine
+2. **Hellhound Spider** discovers endpoints via crawling, robots.txt, sitemap.xml, and JS parsing
+3. **Attack Modules** test each endpoint with categorized payloads (auth bypass, query injection, GET params, `$where` JS, blind regex)
+4. **Payload Dataset** provides 6000+ injection payloads across 50+ categories for 16 database engines
+5. **Response Analyzer** scores responses using baseline comparison, sensitive data detection, and anomaly detection
+6. **Output & Reporting** generates chronological timeline, severity-classified findings, and JSON reports
+
+---
+
 ## Installation
 
 ### From PyPI (coming soon)
@@ -191,36 +207,11 @@ Sources include: PayloadsAllTheThings, HackTricks, PortSwigger, OWASP, NosqlMap,
 
 ---
 
-## Example Output
+## Demo
 
-```
-╔══════════════════════════════════════════════════════════════╗
-║  NoSQL Injection Exploitation Framework v2.2                ║
-║  Automated NoSQL Injection Testing Suite                    ║
-╚══════════════════════════════════════════════════════════════╝
-
-[*] Target: http://target.com/api
-
-[*] Phase 1: Hellhound-Spider Discovery...
-[*] Configuration: depth=3, concurrency=10
-
-[+] Hellhound-Spider discovered 12 unique endpoints
-[+] Found 34 total parameters
-
-════════════════════════════════════════════════════════════════
-  Phase 3-6: Testing & Exploitation
-════════════════════════════════════════════════════════════════
-[!] VULNERABLE: /api/login - Score: 5
-    Payload: {"username": {"$ne": ""}, "password": {"$ne": ""}}
-[!] VULNERABLE: /api/search - Score: 4
-    Payload: {"$gt": ""}
-
-═ Report Summary ═══════════════════════════════════════════════
-Total Duration: 12.45s
-Endpoints Discovered: 12
-Vulnerabilities Found: 2
-[!] Critical: 1 | [!] High: 1
-```
+<p align="center">
+  <img src="screenshots/terminal_output.svg" alt="NoSQLHunter Demo Scan" width="880"/>
+</p>
 
 ---
 

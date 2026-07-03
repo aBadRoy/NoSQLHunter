@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 620" font-family="'Courier New', 'Consolas', monospace">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1e2e"/>
+      <stop offset="100%" style="stop-color:#181825"/>
+    </linearGradient>
+    <linearGradient id="titleBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2d2d3d"/>
+      <stop offset="100%" style="stop-color:#252535"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="3" dy="4" stdDeviation="6" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Terminal Window -->
+  <rect x="20" y="20" width="880" height="580" rx="10" fill="url(#termBg)" stroke="#3d3d5c" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <!-- Title Bar -->
+  <rect x="20" y="20" width="880" height="35" rx="10" fill="url(#titleBar)"/>
+  <rect x="20" y="45" width="880" height="10" fill="url(#titleBar)"/>
+
+  <!-- Window Buttons -->
+  <circle cx="48" cy="37" r="6" fill="#ff5f56"/>
+  <circle cx="68" cy="37" r="6" fill="#ffbd2e"/>
+  <circle cx="88" cy="37" r="6" fill="#27c93f"/>
+
+  <!-- Title Text -->
+  <text x="460" y="42" text-anchor="middle" fill="#a0a0c0" font-size="12">NoSQLHunter - Demo Scan Report</text>
+
+  <!-- Terminal Content -->
+  <text x="35" y="80" fill="#89b4fa" font-size="12" font-weight="bold">NoSQL Injection Exploitation Framework v2.2</text>
+  <text x="35" y="98" fill="#585b70" font-size="12">════════════════════════════════════════════════════════════════</text>
+
+  <!-- Target Info -->
+  <text x="35" y="118" fill="#f5c2e7" font-size="12">[*]</text><text x="55" y="118" fill="#cdd6f4" font-size="12"> Target: </text><text x="110" y="118" fill="#a6e3a1" font-size="12">http://target.com/api</text>
+  <text x="35" y="136" fill="#f5c2e7" font-size="12">[*]</text><text x="55" y="136" fill="#cdd6f4" font-size="12"> Starting exploitation...</text>
+
+  <!-- Loading -->
+  <text x="35" y="160" fill="#f5c2e7" font-size="12">[*]</text><text x="55" y="160" fill="#cdd6f4" font-size="12"> Loading payloads from: dataset/dataset_nosql.json</text>
+  <text x="35" y="178" fill="#a6e3a1" font-size="12">[+]</text><text x="55" y="178" fill="#cdd6f4" font-size="12"> Loaded 84 payloads from dataset</text>
+
+  <!-- Phase 1 -->
+  <text x="35" y="202" fill="#f5c2e7" font-size="12">[*]</text><text x="55" y="202" fill="#cdd6f4" font-size="12"> Phase 1: Hellhound-Spider Discovery...</text>
+  <text x="35" y="220" fill="#a6e3a1" font-size="12">[+]</text><text x="55" y="220" fill="#cdd6f4" font-size="12"> Hellhound-Spider discovered </text><text x="285" y="220" fill="#f9e2af" font-size="12">12</text><text x="295" y="220" fill="#cdd6f4" font-size="12"> unique endpoints</text>
+  <text x="35" y="238" fill="#a6e3a1" font-size="12">[+]</text><text x="55" y="238" fill="#cdd6f4" font-size="12"> Found </text><text x="105" y="238" fill="#f9e2af" font-size="12">34</text><text x="115" y="238" fill="#cdd6f4" font-size="12"> total parameters</text>
+
+  <!-- Divider -->
+  <text x="35" y="260" fill="#585b70" font-size="12">════════════════════════════════════════════════════════════════</text>
+  <text x="35" y="278" fill="#89b4fa" font-size="12">  Phase 3-6: Testing &amp; Exploitation</text>
+  <text x="35" y="296" fill="#585b70" font-size="12">════════════════════════════════════════════════════════════════</text>
+
+  <!-- Findings -->
+  <text x="35" y="320" fill="#94e2d5" font-size="12">[00:00.523]</text>
+  <text x="35" y="338" fill="#f5c2e7" font-size="12">[*]</text><text x="55" y="338" fill="#cdd6f4" font-size="12"> Testing auth bypass on /api/login</text>
+
+  <text x="35" y="362" fill="#f38ba8" font-size="12">[!] VULNERABLE:</text><text x="145" y="362" fill="#f38ba8" font-size="12"> /api/login</text><text x="255" y="362" fill="#cdd6f4" font-size="12"> - Score: </text><text x="305" y="362" fill="#f9e2af" font-size="12">5</text><text x="315" y="362" fill="#cdd6f4" font-size="12"> (</text><text x="325" y="362" fill="#f38ba8" font-size="12">CRITICAL</text><text x="385" y="362" fill="#cdd6f4" font-size="12">)</text>
+  <text x="55" y="380" fill="#585b70" font-size="12">└─ Payload: </text><text x="120" y="380" fill="#fab387" font-size="12">{&quot;username&quot;: {&quot;$ne&quot;: &quot;&quot;}, &quot;password&quot;: {&quot;$ne&quot;: &quot;&quot;}}</text>
+  <text x="55" y="398" fill="#585b70" font-size="12">└─ Indicators: auth_success, sensitive_data, credential_leak</text>
+
+  <text x="35" y="422" fill="#94e2d5" font-size="12">[00:00.891]</text>
+  <text x="35" y="440" fill="#f5c2e7" font-size="12">[*]</text><text x="55" y="440" fill="#cdd6f4" font-size="12"> Testing query injection on /api/search</text>
+
+  <text x="35" y="464" fill="#f38ba8" font-size="12">[!] VULNERABLE:</text><text x="145" y="464" fill="#f38ba8" font-size="12"> /api/search</text><text x="255" y="464" fill="#cdd6f4" font-size="12"> - Score: </text><text x="305" y="464" fill="#f9e2af" font-size="12">4</text><text x="315" y="464" fill="#cdd6f4" font-size="12"> (</text><text x="325" y="464" fill="#fab387" font-size="12">HIGH</text><text x="370" y="464" fill="#cdd6f4" font-size="12">)</text>
+  <text x="55" y="482" fill="#585b70" font-size="12">└─ Payload: </text><text x="120" y="482" fill="#fab387" font-size="12">{&quot;$gt&quot;: &quot;&quot;}</text>
+
+  <!-- Data Extraction -->
+  <text x="35" y="506" fill="#94e2d5" font-size="12">[00:01.567]</text>
+  <text x="35" y="524" fill="#a6e3a1" font-size="12">[+]</text><text x="55" y="524" fill="#cdd6f4" font-size="12"> Extracted </text><text x="115" y="524" fill="#f9e2af" font-size="12">2</text><text x="125" y="524" fill="#cdd6f4" font-size="12"> records from /api/data</text>
+
+  <!-- Summary -->
+  <text x="35" y="552" fill="#585b70" font-size="12">════════════════════════════════════════════════════════════════</text>
+  <text x="35" y="570" fill="#89b4fa" font-size="12">  REPORT SUMMARY</text>
+  <text x="35" y="588" fill="#585b70" font-size="12">════════════════════════════════════════════════════════════════</text>
+  <text x="35" y="608" fill="#cdd6f4" font-size="12">  Duration: 3.42s  |  Endpoints: 12  |  Vulns: </text><text x="370" y="608" fill="#f9e2af" font-size="12">5</text></svg>
